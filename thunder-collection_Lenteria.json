@@ -1,0 +1,88 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Lenteria",
+    "dateExported": "2023-04-27T09:31:01.006Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "61ad7e73-0d61-455a-8e41-8c0a34f3c974",
+            "colId": "4f6393c0-1fcc-476e-bc78-fc4c4ca79cc3",
+            "containerId": "",
+            "name": "Register Users",
+            "url": "http://localhost:4000/users/register",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-04-27T09:03:50.868Z",
+            "modified": "2023-04-27T09:03:50.868Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"firstName\": \"Jason\",\r\n    \"lastName\": \"Watmore\",\r\n    \"username\": \"jason\",\r\n    \"password\": \"my-super-secret-password\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "ae671b08-0472-4bfe-b0be-33f0fc3d0869",
+            "colId": "4f6393c0-1fcc-476e-bc78-fc4c4ca79cc3",
+            "containerId": "",
+            "name": "Authenticate Users",
+            "url": "http://localhost:4000/users/authenticate",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-04-27T09:07:03.620Z",
+            "modified": "2023-04-27T09:07:03.620Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"username\": \"Arthor\",\r\n    \"password\": \"123456\"\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fbf0aa67-399c-4cd1-999b-46e9869b4b5c",
+            "colId": "4f6393c0-1fcc-476e-bc78-fc4c4ca79cc3",
+            "containerId": "",
+            "name": "Get Users",
+            "url": "http://localhost:4000/users",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-04-27T09:08:49.598Z",
+            "modified": "2023-04-27T09:08:49.598Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjMsImlhdCI6MTY4MjU4NjM3MCwiZXhwIjoxNjgzMTkxMTcwfQ.bP94Hk2qO67i1o0o3kDVDOxxlnVEEVi77KdUfqgivLk"
+            },
+            "tests": []
+        },
+        {
+            "_id": "a3050ea1-a27f-41cd-a1f8-05c24f62ad01",
+            "colId": "4f6393c0-1fcc-476e-bc78-fc4c4ca79cc3",
+            "containerId": "",
+            "name": "Get Users by ID",
+            "url": "http://localhost:4000/users/1",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-04-27T09:11:44.446Z",
+            "modified": "2023-04-27T09:11:44.446Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"firstName\": \"Jason\",\r\n    \"lastName\": \"Watmore\"\r\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjMsImlhdCI6MTY4MjU4NjM3MCwiZXhwIjoxNjgzMTkxMTcwfQ.bP94Hk2qO67i1o0o3kDVDOxxlnVEEVi77KdUfqgivLk"
+            },
+            "tests": []
+        }
+    ]
+}
